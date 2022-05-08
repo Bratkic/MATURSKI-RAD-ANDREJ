@@ -116,3 +116,43 @@ C:\Users\ucenik\Downloads\mnatura\MaturskiAndrej\obj\Debug\MaturskiAndrej.csproj
 C:\Users\ucenik\Downloads\mnatura\MaturskiAndrej\obj\Debug\MaturskiAndrej.csproj.CopyComplete
 C:\Users\ucenik\Downloads\mnatura\MaturskiAndrej\obj\Debug\MaturskiAndrej.dll
 C:\Users\ucenik\Downloads\mnatura\MaturskiAndrej\obj\Debug\MaturskiAndrej.pdb
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\MaturskiAndrej.dll.config
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\MaturskiAndrej.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\MaturskiAndrej.pdb
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csc.exe
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csc.exe.config
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csc.rsp
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csi.exe
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csi.exe.config
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\csi.rsp
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\vbc.exe
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\vbc.exe.config
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\vbc.rsp
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\VBCSCompiler.exe
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\obj\Debug\MaturskiAndrej.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\obj\Debug\MaturskiAndrej.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\obj\Debug\MaturskiAndrej.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\obj\Debug\MaturskiAndrej.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\obj\Debug\MaturskiAndrej.pdb
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Buffers.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Memory.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Korisnik\Desktop\Skola (1)\Maturski rad\MATURSKI-RAD-ANDREJ\MaturskiAndrej\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll

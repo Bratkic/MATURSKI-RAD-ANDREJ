@@ -23,11 +23,19 @@ namespace MaturskiAndrej
             if (rezultat==0)
             {
                 Session["korisnik"] = emailtxt.Text;
-                Response.Redirect("kontrolpanel.aspx");
+                Response.Redirect("Login_Stvarno.aspx");
             }
             else
             {
-                Response.Redirect("Login.aspx");
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Vec ste registrovani')", true);
+                imetxt.Text = "";
+                prezimetxt.Text = "";
+                usernametxt.Text = "";
+
+                emailtxt.Text = "";
+                passtxt.Text = "";
+                //Response.Redirect("Login.aspx");
+                
             }
         }
     }

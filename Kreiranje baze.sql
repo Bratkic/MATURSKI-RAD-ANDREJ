@@ -27,7 +27,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc Register
+alter proc Register
 @username varchar(30),
 @ime nvarchar(30),
 @prezime varchar(30),
@@ -52,5 +52,21 @@ exec Register @username = 'bratke', @ime = 'Andrej', @prezime = 'Bratic', @email
 
 
 
+use fudbalske_slicice
 
-
+Create procedure Korisnik_Provera
+@email varchar(30),
+@pass varchar(30)
+AS
+SET LOCK_TIMEOUT 3000;
+BEGIN TRY
+	IF EXISTS(SELECT TOP 1 email FROM Korisnik
+	WHERE email = @email and pass=@pass)
+	Begin
+	RETURN 0
+	end
+	RETURN 1
+END TRY
+BEGIN CATCH
+	RETURN @@error;
+END CATCH
