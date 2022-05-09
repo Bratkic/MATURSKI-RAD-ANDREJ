@@ -82,6 +82,42 @@ namespace MaturskiAndrej
             return rezultat;
         }
 
+        public int Godina_Izdanja_Insert(string naziv)
+        {
+
+
+            conn.ConnectionString = webConfig;
+            int rezultat;
+
+            comm.Connection = conn;
+            comm.CommandType = CommandType.StoredProcedure;
+            comm.CommandText = "Godina_Izdanja_Insert";
+
+            comm.Parameters.Add(new SqlParameter("@godina", SqlDbType.VarChar, 5, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Current, naziv));
+            comm.Parameters.Add(new SqlParameter("@RETURN_VALUE", SqlDbType.Int, 4, ParameterDirection.ReturnValue, true, 0, 0, "", DataRowVersion.Current, null));
+            conn.Open();
+            comm.ExecuteNonQuery();
+            conn.Close();
+
+            int ret;
+            ret = (int)comm.Parameters["@RETURN_VALUE"].Value;
+
+            if (ret==0)
+            {
+                rezultat = 0;
+            }
+            else
+            {
+                rezultat = 1;
+            }
+
+            return rezultat;
+        }
+
+        
+
+
+
 
 
     }

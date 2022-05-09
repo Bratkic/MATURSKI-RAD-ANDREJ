@@ -64,9 +64,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Album.aspx" />
+    <Content Include="Dodaj_Slicicu.aspx" />
+    <Content Include="Glavna.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Login_Stvarno.aspx" />
     <Content Include="Style.css" />
+    <Content Include="StyleGlavna.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +80,27 @@
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Album.aspx.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album.aspx.designer.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_Slicicu.aspx.cs">
+      <DependentUpon>Dodaj_Slicicu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dodaj_Slicicu.aspx.designer.cs">
+      <DependentUpon>Dodaj_Slicicu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Glavna.aspx.cs">
+      <DependentUpon>Glavna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Glavna.aspx.designer.cs">
+      <DependentUpon>Glavna.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
