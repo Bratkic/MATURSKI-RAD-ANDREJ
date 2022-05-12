@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MaturskiAndrej
 {
-    public partial class Dodaj_Slicicu : System.Web.UI.Page
+    public partial class Pretraga : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

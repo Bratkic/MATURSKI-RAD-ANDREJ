@@ -71,6 +71,10 @@ BEGIN CATCH
 	RETURN @@error;
 END CATCH
 
+drop procedure vrati_Id
+
+create procedure vrati_slic_id
+
 
 SET ANSI_NULLS ON
 GO
@@ -101,7 +105,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-	create procedure Album_Insert
+	alter procedure Album_Insert
 	@naziv varchar(30),
 	@izdavac_id int,
 	@godina_izdanja int
@@ -110,7 +114,7 @@ GO
 	begin try
 	if exists(select top 1 naziv from Album
 		where naziv=@naziv and izdavac_id=@izdavac_id and godina_izdanja_id=@godina_izdanja)
-		return 1
+		return @izdavac_id
 		else
 		insert into Album(naziv,izdavac_id,godina_izdanja_id)
 		values (@naziv,@izdavac_id,@godina_izdanja)
@@ -155,8 +159,8 @@ go
 	@ime varchar(30),
 	@prezime varchar(30),
 	@broj int,
-	@slika varbinary(max),
-	@album_id int
+	@album_id int,
+	@slika nvarchar(max)
 	as
 	set lock_timeout 3000;
 	
@@ -164,8 +168,8 @@ go
 		if exists(select top 1 ime,prezime,broj from Slicica where ime=@ime and prezime = @prezime and broj=@broj)
 		return 1
 		else
-		insert into Slicica(ime,prezime,broj,slika,album_id)
-		values (@ime,@prezime,@broj,@slika,@album_id)
+		insert into Slicica(ime,prezime,broj,album_id,slika)
+		values (@ime,@prezime,@broj,@album_id,@slika)
 		return 0
 		end try
 		
@@ -173,6 +177,8 @@ go
 			return @@error
 			
 		end catch
+		
+
 		
 
 	
@@ -197,13 +203,37 @@ begin try
 	return @@error
 	end catch
 	
-	exec Godina_Izdanja_Insert @godina = '2016'
-	exec Izdavac_Insert @naziv = 'Konami'
-	exec Album_Insert @naziv = 'Uefa Champions League', @izdavac_id = '1', @godina_izdanja = '1'
+	exec Godina_Izdanja_Insert @godina = '2017'
+	exec Izdavac_Insert @naziv = 'Fifa 365'
+	exec Album_Insert @naziv = 'Uefa Champions League', @izdavac_id = 1, @godina_izdanja = 2
 	exec Slicica_Insert @ime = 'Lionel' , @prezime = 'Messi', @broj = 36, @slika = null, @album_id = 1
-	exec Slicica_Korisnik_Insert @korisnik_id = 1, @slicica_id = 1 
+	exec Slicica_Korisnik_Insert @korisnik_id = 2, @slicica_id = 17 
 	
 	select username as naziv, Slicica.ime+' '+Slicica.prezime as igrac, broj, album.naziv, Izdavac.naziv, Godina_izdanja.naziv from Slicica_Korisnik join Korisnik on Korisnik.id = korisnik_id join Slicica on Slicica.id = slicica_id join Album on Album.id = album_id join Izdavac on Izdavac.id= izdavac_id  join Godina_izdanja on Godina_izdanja.id = godina_izdanja_id
 	
 	alter table Slicica
 	add slika nvarchar(max)
+	
+	
+	create view Albumi
+	
+	as 
+	
+	use fudbalske_slicice
+Select Album.id as id, Album.naziv as Naziv, Godina_Izdanja.naziv as Godina_izdanja, Izdavac.naziv as Izdavac from Album join Izdavac on Album.izdavac_id = Izdavac.id join Godina_izdanja on Album.godina_izdanja_id=Godina_izdanja.id
+Select naziv from Godina_izdanja
+
+Select id,naziv from Izdavac
+
+select Album.naziv from Album where Album.izdavac_id = 1 and 
+
+Select distinct Album.godina_izdanja_id as id,Godina_Izdanja.naziv from Album join Godina_Izdanja on Album.Godina_Izdanja_id = Godina_Izdanja.id
+
+Select distinct Album.izdavac_id as id, Izdavac.naziv from Album join Izdavac on Album.izdavac_id = Izdavac.id where Album.godina_izdanja_id = 1
+
+select Korisnik.username, Slicica.ime + ' ' + Slicica.prezime as igrac, Slicica.broj, Album.naziv as album, Godina_izdanja.naziv as godina_izdanja, Izdavac.naziv as izdavac from Slicica_Korisnik
+join Korisnik on Slicica_Korisnik.korisnik_id=Korisnik.id join Slicica on Slicica_Korisnik.slicica_id = Slicica.id join Album on Slicica.album_id = Album.id join Godina_izdanja on Album.godina_izdanja_id = Godina_izdanja.id join Izdavac on Album.izdavac_id = Izdavac.id
+
+select id from Korisnik where Korisnik.email = 'petar.muzurovic@gmail.com'
+
+select MAX (id) from Slicica

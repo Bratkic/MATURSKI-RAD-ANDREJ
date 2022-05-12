@@ -11,7 +11,7 @@ namespace MaturskiAndrej
 {
 
 
-    public partial class Album
+    public partial class Slicice
     {
 
         /// <summary>
@@ -24,67 +24,67 @@ namespace MaturskiAndrej
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// GridView1 control.
+        /// imetxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox imetxt;
 
         /// <summary>
-        /// Godine control.
+        /// prezimetxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Godine;
+        protected global::System.Web.UI.WebControls.TextBox prezimetxt;
 
         /// <summary>
-        /// Izdavaci control.
+        /// brojtxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Izdavaci;
+        protected global::System.Web.UI.WebControls.TextBox brojtxt;
 
         /// <summary>
-        /// nazivAlbuma control.
+        /// GodineDrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nazivAlbuma;
+        protected global::System.Web.UI.WebControls.DropDownList GodineDrop;
 
         /// <summary>
-        /// Dodaj_Album control.
+        /// IzdavaciDrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Dodaj_Album;
+        protected global::System.Web.UI.WebControls.DropDownList IzdavaciDrop;
 
         /// <summary>
-        /// godtxt control.
+        /// NazivDrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox godtxt;
+        protected global::System.Web.UI.WebControls.DropDownList NazivDrop;
 
         /// <summary>
-        /// izdavactxt control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox izdavactxt;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
         /// Button1 control.
@@ -94,14 +94,5 @@ namespace MaturskiAndrej
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

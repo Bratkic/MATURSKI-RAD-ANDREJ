@@ -23,6 +23,7 @@ namespace MaturskiAndrej
             if (rezultat == 0)
             {
                 Session["korisnik"] = emailtxt.Text;
+                Response.Write(Session["Korisnik"].ToString());
                 Response.Redirect("Glavna.aspx");
             }
             else

@@ -15,10 +15,12 @@
     <form id="form1" runat="server">
         <div>
             <nav class="navMenu">
-        <a href="#">Dodaj Album</a>
-        <a href="Dodaj_Slicicu.aspx">Dodaj Slicice</a>
-        <a href="#">Pretrazi Slicice</a>
-        <a href="#">Jos neka kontrola</a>
+
+        
+        <a href="Album.aspx">Dodaj Album</a>
+        <a href="Slicice.aspx">Dodaj Slicice</a>
+        <a href="Pretraga.aspx">Pretrazi Slicice</a>
+        
       
          </nav>
         </div>

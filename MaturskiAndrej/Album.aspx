@@ -12,13 +12,23 @@
 
 
         </div>
-        <asp:DropDownList ID="DropDown_Godina" runat="server">
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
+        
+        <asp:DropDownList ID="Godine" runat="server" OnSelectedIndexChanged="Godine_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:DropDownList ID="DropDown_Izdavac" runat="server">
+        <asp:DropDownList ID="Izdavaci" runat="server" OnSelectedIndexChanged="Izdavaci_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:TextBox ID="Naziv_Txt" runat="server"></asp:TextBox>
-        <asp:TextBox ID="Godina_Txt" runat="server"></asp:TextBox>
-        <asp:TextBox ID="Izdavac_Txt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="nazivAlbuma" runat="server"></asp:TextBox>
+        <asp:Button ID="Dodaj_Album" runat="server" OnClick="Dodaj_Album_Click" Text="Button" />
+        <p>
+            <asp:TextBox ID="godtxt" runat="server"></asp:TextBox>
+            <asp:TextBox ID="izdavactxt" runat="server"></asp:TextBox>
+        </p>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+        <a href="Glavna.aspx">Vrati na pocetnu</a>
+        
     </form>
 </body>
 </html>

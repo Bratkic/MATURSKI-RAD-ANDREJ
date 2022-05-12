@@ -65,10 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Album.aspx" />
-    <Content Include="Dodaj_Slicicu.aspx" />
     <Content Include="Glavna.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Login_Stvarno.aspx" />
+    <Content Include="Pretraga.aspx" />
+    <Content Include="Slicice.aspx" />
     <Content Include="Style.css" />
     <Content Include="StyleGlavna.css" />
     <Content Include="Web.config" />
@@ -87,13 +88,6 @@
     </Compile>
     <Compile Include="Album.aspx.designer.cs">
       <DependentUpon>Album.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Dodaj_Slicicu.aspx.cs">
-      <DependentUpon>Dodaj_Slicicu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dodaj_Slicicu.aspx.designer.cs">
-      <DependentUpon>Dodaj_Slicicu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Glavna.aspx.cs">
       <DependentUpon>Glavna.aspx</DependentUpon>
@@ -117,7 +111,21 @@
       <DependentUpon>Login_Stvarno.aspx</DependentUpon>
     </Compile>
     <Compile Include="MatRadClass.cs" />
+    <Compile Include="Pretraga.aspx.cs">
+      <DependentUpon>Pretraga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pretraga.aspx.designer.cs">
+      <DependentUpon>Pretraga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slicice.aspx.cs">
+      <DependentUpon>Slicice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slicice.aspx.designer.cs">
+      <DependentUpon>Slicice.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.Master" />
@@ -128,6 +136,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
