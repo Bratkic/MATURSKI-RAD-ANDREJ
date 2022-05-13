@@ -161,8 +161,8 @@ namespace MaturskiAndrej
                 }
                 else
                 {
-                    FileUpload1.SaveAs(Server.MapPath("./Uploads/" + FileUpload1.FileName));
-                    adresa = "./Uploads/" + FileUpload1.FileName;
+                    FileUpload1.SaveAs(Server.MapPath("/Uploads/" + FileUpload1.FileName));
+                    adresa = "/Uploads/" + FileUpload1.FileName;
                 }
 
             }

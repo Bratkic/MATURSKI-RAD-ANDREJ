@@ -253,3 +253,27 @@ Select distinct Slicica.id as id, Slicica.ime+' ' + Slicica.prezime as igrac fro
 Select Korisnik.username as Korisnik, Album.naziv + ' ' + Godina_Izdanja.naziv + ' ' + Izdavac.naziv as Album from Slicica_Korisnik
 join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id 
 where Slicica.id = 1
+
+go
+Alter proc Sve_Slike
+@korisnik int
+as
+Select k.slicica_id,s.slika,s.ime,s.album_id from Slicica_Korisnik as k
+Inner Join Slicica as s
+on
+k.slicica_id=s.id
+where k.korisnik_id=@korisnik
+go
+
+execute Sve_Slike '2'
+
+Select distinct Slicica.id as id, Slicica.ime+' ' + Slicica.prezime as igrac from Slicica
+
+
+
+
+Select Korisnik.username as Korisnik, Album.naziv + ' ' + Godina_Izdanja.naziv + ' ' + Izdavac.naziv as Album from Slicica_Korisnik 
+             join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id
+             where Slicica.broj=32
+             
+             Select distinct Slicica.ime+' ' + Slicica.prezime as igrac, Slicica.broj as broj from Slicica

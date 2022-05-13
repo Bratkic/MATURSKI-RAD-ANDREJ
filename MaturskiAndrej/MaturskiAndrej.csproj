@@ -69,10 +69,13 @@
     <Content Include="Login.aspx" />
     <Content Include="Login_Stvarno.aspx" />
     <Content Include="Pretraga.aspx" />
+    <Content Include="proba.aspx" />
     <Content Include="Slicice.aspx" />
     <Content Include="Style.css" />
+    <Content Include="StyleAlbum.css" />
     <Content Include="StyleGlavna.css" />
-    <Content Include="stylish.css" />
+    <Content Include="StylePretraga.css" />
+    <Content Include="StyleSlicice.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +121,13 @@
     </Compile>
     <Compile Include="Pretraga.aspx.designer.cs">
       <DependentUpon>Pretraga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proba.aspx.cs">
+      <DependentUpon>proba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proba.aspx.designer.cs">
+      <DependentUpon>proba.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slicice.aspx.cs">

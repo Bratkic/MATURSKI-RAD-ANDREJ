@@ -44,7 +44,7 @@ namespace MaturskiAndrej
                 adapter.Fill(grid);
                 GridView1.DataSource = grid;
                 GridView1.DataBind();
-                
+
             }
             catch (Exception Greska)
             {

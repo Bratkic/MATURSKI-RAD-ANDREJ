@@ -11,15 +11,21 @@ using System.Data;
 
 namespace MaturskiAndrej
 {
+
     public partial class Pretraga : System.Web.UI.Page
     {
+        DataSet ds = new DataSet();
+        int izabrani_broj;
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             if (!IsPostBack)
             {
                 Korisnici_Populate();
                 Albumi_Populate();
                 Slicice_Populate();
+                
+
             }
         }
         protected void Korisnici_Populate()
@@ -41,6 +47,7 @@ namespace MaturskiAndrej
                 DropKorisnici.DataBind();
 
                 Grid_Korisnici_Populate();
+                
 
             }
             catch (Exception Greska)
@@ -61,10 +68,11 @@ namespace MaturskiAndrej
             
             try
             {
+                DataSet das= new DataSet();
                 SqlDataAdapter adapter = new SqlDataAdapter(naredba.ToString(), conn);
-                DataTable grid = new DataTable();
-                adapter.Fill(grid);
-                GridKorisnici.DataSource = grid;
+                
+                adapter.Fill(das);
+                GridKorisnici.DataSource = das;
                 GridKorisnici.DataBind();
 
             }
@@ -80,7 +88,10 @@ namespace MaturskiAndrej
 
         protected void DropKorisnici_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            izabrani_broj =Convert.ToInt32( DropKorisnici.SelectedValue);
             Grid_Korisnici_Populate();
+            
         }
 
         protected void Albumi_Populate()
@@ -102,6 +113,7 @@ namespace MaturskiAndrej
                 DropAlbumi.DataTextField = "naziv_albuma";
                 DropAlbumi.DataBind();
                 Grid_Albumi_Populate();
+                
                
 
             }
@@ -123,10 +135,11 @@ namespace MaturskiAndrej
             
             try
             {
+                DataSet das = new DataSet();
                 SqlDataAdapter adapter = new SqlDataAdapter(naredba.ToString(), conn);
-                DataTable grid = new DataTable();
-                adapter.Fill(grid);
-                GridAlbumi.DataSource = grid;
+                
+                adapter.Fill(das);
+                GridAlbumi.DataSource = das;
                 GridAlbumi.DataBind();
 
             }
@@ -139,12 +152,14 @@ namespace MaturskiAndrej
 
         protected void DropAlbumi_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+
             Grid_Albumi_Populate();
         }
         protected void Slicice_Populate()
         {
 
-            StringBuilder naredba = new StringBuilder("Select distinct Slicica.id as id, Slicica.ime+' ' + Slicica.prezime as igrac from Slicica");
+            StringBuilder naredba = new StringBuilder("Select distinct Slicica.broj as broj, Slicica.ime+' ' + Slicica.prezime as igrac from Slicica");
             
 
             //textBox2.Text = naredba.ToString();
@@ -157,7 +172,7 @@ namespace MaturskiAndrej
                 DataTable god = new DataTable();
                 adapter.Fill(god);
                 DropSlicice.DataSource = god;
-                DropSlicice.DataValueField = "id";
+                DropSlicice.DataValueField = "broj";
                 DropSlicice.DataTextField = "igrac";
                 DropSlicice.DataBind();
                 Grid_Slicice_Populate();
@@ -175,7 +190,7 @@ namespace MaturskiAndrej
         {
             StringBuilder naredba = new StringBuilder("Select Korisnik.username as Korisnik, Album.naziv + ' ' + Godina_Izdanja.naziv + ' ' + Izdavac.naziv as Album from Slicica_Korisnik ");
             naredba.Append(" join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id ");
-            naredba.Append(" where Slicica.id=" + DropSlicice.SelectedValue);
+            naredba.Append(" where Slicica.broj=" + DropSlicice.SelectedValue);
 
             SqlConnection conn = new SqlConnection();
             string webConfig = ConfigurationManager.ConnectionStrings["home"].ConnectionString;
@@ -183,10 +198,11 @@ namespace MaturskiAndrej
 
             try
             {
+                DataSet ds = new DataSet();
                 SqlDataAdapter adapter = new SqlDataAdapter(naredba.ToString(), conn);
-                DataTable grid = new DataTable();
-                adapter.Fill(grid);
-                GridSlicice.DataSource = grid;
+                
+                adapter.Fill(ds);
+                GridSlicice.DataSource = ds;
                 GridSlicice.DataBind();
 
             }
@@ -201,5 +217,6 @@ namespace MaturskiAndrej
         {
             Grid_Slicice_Populate();
         }
+  
     }
 }

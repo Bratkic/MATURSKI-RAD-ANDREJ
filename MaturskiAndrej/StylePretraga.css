@@ -1,0 +1,137 @@
+﻿.myGridClass {
+    width: 50%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #a11246;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    .myGridClass td {
+        padding: 2px;
+        font-size: 11px;
+        text-align: center;
+        line-height: 22px;
+        border: solid 1px #a11246;
+        color: #000;
+    }
+
+    .myGridClass th {
+        padding: 4px 2px;
+        color: #fff;
+        text-align: center;
+        line-height: 25px;
+        font-weight: 600;
+        font-size: 10px;
+        background: #90c843;
+        border-left: solid 1px #a11246;
+    }
+
+    .myGridClass .myAltRowClass {
+        background: #fcfcfc repeat-x top;
+    }
+
+    .myGridClass .myPagerClass {
+        background: #90c843;
+    }
+
+        .myGridClass .myPagerClass table {
+            margin: 5px 0;
+        }
+
+        .myGridClass .myPagerClass td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .myGridClass .myPagerClass a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .myGridClass .myPagerClass a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.mydropdownlist {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #90c843;
+    font-weight: bold;
+    width: 450px;
+}
+
+.textbox {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+    .textbox:focus {
+        outline: none;
+        border: rgba(24,149,215,1) 2px solid;
+        color: rgba(24,149,215,1);
+    }
+
+.button {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #90c843;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background: #80b438;
+    }
+
+
+.slika{
+    width:200px;
+    height:80px;
+}
+
+a{
+    color: #272727;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 300px;
+    margin-right:10px;
+}
+#link{
+    color: #272727;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 150px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#link:hover {
+    color: #fddb3a;
+}
