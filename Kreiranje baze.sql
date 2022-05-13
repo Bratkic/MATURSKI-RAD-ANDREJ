@@ -237,3 +237,19 @@ join Korisnik on Slicica_Korisnik.korisnik_id=Korisnik.id join Slicica on Slicic
 select id from Korisnik where Korisnik.email = 'petar.muzurovic@gmail.com'
 
 select MAX (id) from Slicica
+use fudbalske_slicice;
+Select Slicica.ime+' '+Slicica.prezime as naziv, Slicica.broj, Album.naziv, Godina_Izdanja.naziv, Izdavac.Naziv, Slicica.slika from Slicica_Korisnik join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id
+join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id where Korisnik.id = 1
+
+Select distinct Album.id, Album.naziv +' '+ Godina_Izdanja.naziv +' '+ Izdavac.naziv as naziv_albuma from Album join Godina_Izdanja on Album.godina_izdanja_Id = Godina_Izdanja.id join Izdavac on Album.izdavac_id = Izdavac.id 
+
+
+Select Korisnik.username as Korisnik, Slicica.Ime+ ' ' + Slicica.Prezime as igrac , Slicica.broj as broj, Slicica.slika from Slicica_Korisnik
+join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id 
+where Album.id = 1
+
+Select distinct Slicica.id as id, Slicica.ime+' ' + Slicica.prezime as igrac from Slicica
+
+Select Korisnik.username as Korisnik, Album.naziv + ' ' + Godina_Izdanja.naziv + ' ' + Izdavac.naziv as Album from Slicica_Korisnik
+join Slicica on Slicica_Korisnik.slicica_id=Slicica.id join Korisnik on Slicica_Korisnik.korisnik_id = Korisnik.id join Album on Slicica.album_id = Album.id join Izdavac on Album.izdavac_id = Izdavac.id join Godina_Izdanja on Album.Godina_Izdanja_Id = Godina_izdanja.id 
+where Slicica.id = 1

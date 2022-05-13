@@ -11,7 +11,7 @@ namespace MaturskiAndrej
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(Session["Korisnik"].ToString());
+            Response.Write("  Korisnik:" + " " + Session["Korisnik"].ToString());
         }
     }
 }
