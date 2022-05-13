@@ -48,12 +48,6 @@ begin catch
 	return @@error
 end catch
 
-exec Register @username = 'bratke', @ime = 'Andrej', @prezime = 'Bratic', @email = 'andrej.bratic@gmail.com', @pass = '123'
-
-
-
-
-
 Create procedure Korisnik_Provera
 @email varchar(30),
 @pass varchar(30)
@@ -70,10 +64,6 @@ END TRY
 BEGIN CATCH
 	RETURN @@error;
 END CATCH
-
-drop procedure vrati_Id
-
-create procedure vrati_slic_id
 
 
 SET ANSI_NULLS ON
@@ -98,8 +88,6 @@ GO
 	begin catch
 		return @@error
 	end catch
-	
-	use fudbalske_slicice
 	
 SET ANSI_NULLS ON
 GO
@@ -178,10 +166,6 @@ go
 			
 		end catch
 		
-
-		
-
-	
 set ansi_nulls on
 go
 set quoted_identifier on
@@ -215,11 +199,6 @@ begin try
 	add slika nvarchar(max)
 	
 	
-	create view Albumi
-	
-	as 
-	
-	use fudbalske_slicice
 Select Album.id as id, Album.naziv as Naziv, Godina_Izdanja.naziv as Godina_izdanja, Izdavac.naziv as Izdavac from Album join Izdavac on Album.izdavac_id = Izdavac.id join Godina_izdanja on Album.godina_izdanja_id=Godina_izdanja.id
 Select naziv from Godina_izdanja
 
